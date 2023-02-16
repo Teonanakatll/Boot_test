@@ -43,7 +43,30 @@
                 </div>
                 {% endfor %}
 
+            </div>
+        </div>
+    </section>
 
+    <section class="whom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center text-uppercase color2 mb-5">курс для тех, кто</h2>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                {% for f in whom %}
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="text-center">{{ f.text }}</h5>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <a href="#footer" class="btn btn-lg text-uppercase btn-itd">Заказать</a>
+                </div>
             </div>
         </div>
     </section>

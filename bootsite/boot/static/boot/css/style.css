@@ -90,6 +90,11 @@ header, footer {
     background-color: var(--color1);
     margin: 15px auto 30px;
 }
+/* Для кого курс */
+.whom h5 {
+    padding: 50px;
+    border: 3px solid var(--color1);
+}
 /* Цвет */
 .color1 {
     color: var(--color1)
