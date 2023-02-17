@@ -30,3 +30,21 @@
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
 </button>
+
+<div class="col-md-4 col-sm-12">
+  <h4 class="text-center fw-bold mb-3 mt-3">Модуль 1<br>(HTML)</h4>
+  <div class="accordion accordion-flush" id="accordion1">
+    {% for a in acc1 %}
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading{{ a.id }}">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{ a.id }}" aria-expanded="false" aria-controls="flush-collapse{{ a.id }}">
+          {{ a.title }}
+        </button>
+      </h2>
+      <div id="flush-collapse{{ a.id }}" class="accordion-collapse collapse" aria-labelledby="heading{{ a.id }}" data-bs-parent="#accordion1">
+        <div class="accordion-body">{{ a.content }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
