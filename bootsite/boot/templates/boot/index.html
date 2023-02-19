@@ -1,4 +1,5 @@
 {% load static %}
+{% load boot_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,7 +100,7 @@
       </div>
 
       <div class="col-md-4 col-sm-12">
-        <h4 class="text-center fw-bold mb-3 mt-3">Модуль 1<br>(HTML)</h4>
+        <h4 class="text-center fw-bold mb-3 mt-3">Модуль 2<br>(CSS)</h4>
         <div class="accordion accordion-flush" id="accordion2">
            {% for b in acc2 %}
            <div class="accordion-item">
@@ -117,7 +118,7 @@
       </div>
 
       <div class="col-md-4 col-sm-12">
-        <h4 class="text-center fw-bold mb-3 mt-3">Модуль 1<br>(HTML)</h4>
+        <h4 class="text-center fw-bold mb-3 mt-3">Модуль 3<br>(Практика)</h4>
         <div class="accordion accordion-flush" id="accordion3">
           {% for c in acc3 %}
            <div class="accordion-item">
@@ -135,7 +136,32 @@
       </div>
 
 
+    </div>
+  </div>
+</section>
 
+<section class="learning">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center text-uppercase color2 mb-5">Процесс обучения</h2>
+      </div>
+    </div>
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-9 col-sm-12">
+        {% get_lear as tmp %}
+        {% for g in tmp %}
+        <h5>{{ g }}</h5>
+        {% endfor %}
+      </div>
+      <div class="col-lg-3 col-sm-12 mb-sm-5 mt-sm-5 text-center">
+        <img src="{% static 'boot/images/mockup.png' %}" alt="Процесс обучения" class="img-fluid" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <a href="#footer" class="btn btn-itd btn-lg text-uppercase">Заказать</a>
+      </div>
     </div>
   </div>
 </section>
