@@ -51,3 +51,21 @@ author = [
 def show_author():
     return {'list': author}
 
+otz = [
+    {'name': 'Кристина Трибой',
+     'img': 'boot/images/ariana-grande.jpg',
+     'text': 'Исмаил, спосибо вам большое! Очень толковый курс у вас получился, обучение прошло '
+             'легко и интересно!'},
+    {'name': 'Сара Барабу',
+     'img': 'boot/images/shakira.jpg',
+     'text': 'Узнала много нового, отдельное спасибо за большое количество полезной информации в '
+             'конце вашего курса.'},
+    {'name': 'Тамара Вадудадудовна',
+     'img': 'boot/images/uma-turman.jpg',
+     'text': 'Курс очень пригодится в будущем в работе и сэкономит много времени. Только цена не '
+             'радует, вы жмот!'}
+]
+
+@register.inclusion_tag('boot/otzivy.html')
+def show_otz():
+    return {'list': otz}

@@ -1,0 +1,21 @@
+{% load static %}
+
+<section class="otzivy">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center text-uppercase color2 mb-5">отзывы о курсе</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for l in list %}
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <img src="{% static l.img %}" class="otz_circle" alt="">
+        <h5 class="text-center">{{ l.name }}</h5>
+        <p>{{ l.text }}</p>
+        <div class="line color2"></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
