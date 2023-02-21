@@ -8,6 +8,20 @@ about = [
         {'icon': 'icon-file-video', 'text': '35 видео уроков (5 часов)'},
         {'icon': 'icon-mobile', 'text': 'Просмотр со смартфона'},
     ]
+
+footer = [
+    {'icon': 'icon-youtube-play'},
+    {'icon': 'icon-instagram'},
+    {'icon': 'icon-vkontakte'},
+    {'icon': 'icon-mobile'},
+    {'icon': 'icon-mail-alt'},
+    {'icon': 'icon-twitter'},
+    {'icon': 'icon-facebook'},
+    {'icon': 'icon-github-circled'},
+
+]
+
+
 forwhom = [
     {'text': 'Хочет научиться создавать сайты своими силами'},
     {'text': 'Учится современным инструментам разработки'},
@@ -59,6 +73,7 @@ accord3 = [
 def index(request):
     context = {
         'about': about,
+        'foot': footer,
         'whom': forwhom,
         'acc1': accord1,
         'acc2': accord2,

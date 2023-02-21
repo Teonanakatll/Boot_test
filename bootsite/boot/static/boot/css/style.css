@@ -2,7 +2,7 @@
     --color1: #05b1b1;
     --color2: #52339a;
 }
-header, footer, section {
+section {
     padding: 100px 0;
 }
 header {
@@ -132,6 +132,14 @@ header, footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* Подвал */
+footer {
+    padding: 30px 0;
+}
+/* Кнопки футера*/
+.f-btn {
+    border-radius: 50%;
 }
 /* Цвет */
 .color1 {

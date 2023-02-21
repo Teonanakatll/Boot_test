@@ -199,7 +199,18 @@
 </section>
 
 <footer id="footer">
-    1
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        {% for f in foot %}
+<!--В маил ссылка формата
+        href="mailto:ismail@mail.ru?subject=Вопрос по курсу html+css&body=Здравствуйте, ITDoctor,">-->
+
+        <a href="#" target="_blank" class="btn f-btn btn-outline-light"><i class="{{ f.icon }}"></i></a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </footer>
 
 <!-- Modal -->
