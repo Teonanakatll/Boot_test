@@ -1,7 +1,7 @@
 :root {
     --color1: #eebb12;
 }
-footer {
+footer, section {
     padding: 100px 0;
 }
 header {
@@ -20,6 +20,13 @@ header, footer {
     margin: 0 auto;
     padding: 8px 30px;
     background-color: var(--color1);
+}
+/* Об авторе */
+.author {
+    padding-bottom: 0;
+}
+.itd-img {
+    max-width: 360px;
 }
 /* Цвет */
 .color1 {
