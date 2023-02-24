@@ -79,4 +79,4 @@ def index(request):
         'acc2': accord2,
         'acc3': accord3,
     }
-    return render(request, 'boot/index.html', context=context)
+    return render(request, 'boot/index2.html', context=context)

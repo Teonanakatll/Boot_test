@@ -1,0 +1,27 @@
+:root {
+    --color1: #eebb12;
+}
+footer {
+    padding: 100px 0;
+}
+header {
+    padding: 200px 0;
+    background-color: #eee;
+}
+
+header, footer {
+    background: url('../img/pattern.png'), #eee;
+    background-size: contain;
+}
+/* Кнопка */
+.btn-itd {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 8px 30px;
+    background-color: var(--color1);
+}
+/* Цвет */
+.color1 {
+    color: var(--color1);
+}
