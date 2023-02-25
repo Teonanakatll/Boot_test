@@ -28,7 +28,30 @@ header, footer {
 .itd-img {
     max-width: 360px;
 }
+/* О курсе*/
+.itd-circle {
+    margin: 0 auto 15px;
+    width: 70px;
+    height: 70px;
+    border: 3px solid var(--color1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: var(--color1);
+    margin: 15px auto 30px;
+}
 /* Цвет */
 .color1 {
     color: var(--color1);
+}
+.color2 {
+    color: var(--bs-white);
+}
+.bg1 {
+    background-color: var(--bs-black);
 }

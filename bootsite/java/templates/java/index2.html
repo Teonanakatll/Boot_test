@@ -1,4 +1,5 @@
 {% load static %}
+{% load java_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,6 +58,19 @@
       <div class="col-12">
         <h2 class="text-center text-uppercase color1 mb-5">о курсе</h2>
       </div>
+    </div>
+    <div class="row g-3 mb-5 text-center">
+<!--      {% about as about %}-->
+      {% for a in about %}
+      <div class="col-xl-4 col-md-6 col-sm-12">
+        <div class="bg1 p-3 h100">
+          <div class="itd-circle"><i class="{{ a.icon }}"></i></div>
+          <h5 class="text-center color2">{{ a.title }}</h5>
+          <div class="line"></div>
+          <p class="color2">{{ a.text }}</p>
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
