@@ -4,11 +4,10 @@
 footer, section {
     padding: 100px 0;
 }
-header {
+header, .about, {
     padding: 200px 0;
     background-color: #eee;
 }
-
 header, footer {
     background: url('../img/pattern.png'), #eee;
     background-size: contain;
@@ -43,7 +42,15 @@ header, footer {
     width: 100px;
     height: 3px;
     background-color: var(--color1);
-    margin: 15px auto 30px;
+    margin: 20px auto 20px;
+}
+/* Для кого курс */
+/* Рамки для текста*/
+.forwhom h5 {
+    padding: 30px;
+    height: 100%;
+    background-color: var(--bs-black);
+    border: 3px solid var(--color1);
 }
 /* Цвет */
 .color1 {
