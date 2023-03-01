@@ -4,12 +4,17 @@
 footer, section {
     padding: 100px 0;
 }
-header, .about, {
-    padding: 200px 0;
-    background-color: #eee;
+header {
+    padding: 200px 100px;
+}
+.author, .forwhom {
+    background-color: #000;
+}
+.about, .program {
+    background-color: #111;
 }
 header, footer {
-    background: url('../img/pattern.png'), #eee;
+    background: url('../img/img.png'), #111;
     background-size: contain;
 }
 /* Кнопка */
@@ -49,7 +54,7 @@ header, footer {
 .forwhom h5 {
     padding: 30px;
     height: 100%;
-    background-color: var(--bs-black);
+    background-color: #111;
     border: 3px solid var(--color1);
 }
 /* Цвет */

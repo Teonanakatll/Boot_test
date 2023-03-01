@@ -38,12 +38,12 @@
     </div>
     <div class="row">
       <div class="col-xl-9 col-lg-12">
-        <h4>Исмаил Усеинов</h4>
-        <p>Занимаюсь веб-разработкой с 2013 года.</p>
-        <p>В 2017 году основал обучающий канал ITDoctor. Делюсь своими знаниями в области программирования
+        <h4 class="color2">Исмаил Усеинов</h4>
+        <p class="color2">Занимаюсь веб-разработкой с 2013 года.</p>
+        <p class="color2">В 2017 году основал обучающий канал ITDoctor. Делюсь своими знаниями в области программирования
         и создания сайтов. Сформировал свою методику обучения, которая позволяет ученикам максимально
         эффективно осваивать изучаемый материал.</p>
-        <p>Обучаю языкам HTML, CSS, JavaScript, PHP, работе с препроцессорами, сборщиками и системой контполя
+        <p class="color2">Обучаю языкам HTML, CSS, JavaScript, PHP, работе с препроцессорами, сборщиками и системой контполя
         версий GIT, а также многому другому из мира веб технологий. Уже более тысячи моих учеников научились
         создавать сайты самостоятельно и зарабатывать на этом деньги.</p>
       </div>
@@ -62,10 +62,12 @@
         <h2 class="text-center text-uppercase color1 mb-5">о курсе</h2>
       </div>
     </div>
+<!--  g-3 все марджины между элементами находящимися в row  -->
     <div class="row g-3 mb-5 text-center">
 <!--      {% about as about %}-->
       {% for a in about %}
       <div class="col-xl-4 col-md-6 col-sm-12">
+<!--  p-3 все паддинги между содержимым клетки и её краями  -->
         <div class="bg1 p-3 h100">
           <div class="itd-circle color1"><i class="{{ a.icon }}"></i></div>
           <h4 class="text-center color2">{{ a.title }}</h4>
@@ -95,18 +97,18 @@
         <h2 class="text-center text-uppercase color1 mb-5">курс для тех, кто</h2>
       </div>
     </div>
-    <div class="row mb-5 gy-3">
+    <div class="row mb-5 gy-4">
       <div class="col-md-6 col-cm-12">
-        <h5 class="text-center">только начинает свой путь в мире web-технологий и программирования</h5>
+        <h5 class="text-center color2">только начинает свой путь в мире web-технологий и программирования</h5>
       </div>
       <div class="col-md-6 col-cm-12">
-        <h5 class="text-center">уже знает HTML и CSS, но хочет изучать что-то новое и более крутое</h5>
+        <h5 class="text-center color2">уже знает HTML и CSS, но хочет изучать что-то новое и более крутое</h5>
       </div>
       <div class="col-md-6 col-cm-12">
-        <h5 class="text-center">хочет получить востребованную и хорошо оплачиваемую профессию</h5>
+        <h5 class="text-center color2">хочет получить востребованную и хорошо оплачиваемую профессию</h5>
       </div>
       <div class="col-md-6 col-cm-12">
-        <h5 class="text-center">хочет научиться создавать интерактивные графические интерфейсы для своих web-приложений</h5>
+        <h5 class="text-center color2">хочет научиться создавать интерактивные графические интерфейсы для своих web-приложений</h5>
       </div>
     </div>
     <div class="row">
@@ -117,6 +119,23 @@
   </div>
 </section>
 
+<!-- Программа курса -->
+<section class="program">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center text-uppercase color1 mb-5">программа курса</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="color2 text-center">Курс состоит из 65 занятий, которые объединены в 4 главы, где будет рассмотрено 114
+        практических примера. Длительность курса составляет 20 часов. Супер JavaScript - практический
+        видеокурс: в каждой главе теоритический материал множеством наглядных примеров кода.</p>
+      </div>
+    </div>
+  </div>
+</section>
 </div>
 
 <footer id="footer">
