@@ -1,5 +1,6 @@
 :root {
     --color1: #eebb12;
+    --color2: #fff
 }
 footer, section {
     padding: 100px 0;
@@ -16,6 +17,12 @@ header {
 header, footer {
     background: url('../img/img.png'), #111;
     background-size: contain;
+}
+p {
+    font-size: 18px;
+}
+h1, h3, h5, h4, p, ul, li {
+    color: var(--color2);
 }
 /* Кнопка */
 .btn-itd {
@@ -61,9 +68,7 @@ header, footer {
 .color1 {
     color: var(--color1);
 }
-.color2 {
-    color: var(--bs-white);
-}
+
 .bg1 {
     background-color: var(--bs-black);
 }

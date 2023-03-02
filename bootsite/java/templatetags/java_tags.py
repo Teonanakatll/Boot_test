@@ -1,5 +1,7 @@
 from django import template
 
+from java.models import Lesson
+
 register = template.Library()
 
 about_list = [
@@ -27,3 +29,8 @@ about_list = [
 @register.simple_tag(name='about')
 def get_about():
     return about_list
+
+@register.simple_tag(name='lessons')
+def show_lessons(filter=None):
+    return Lesson.objects.filter(chap=filter)
+
