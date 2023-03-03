@@ -30,7 +30,8 @@ about_list = [
 def get_about():
     return about_list
 
-@register.simple_tag(name='lessons')
-def show_lessons(filter=None):
-    return Lesson.objects.filter(chap=filter)
+@register.simple_tag(name='faq')
+def show_faq():
+    return Lesson.objects.filter(chap_id=5)
 
+# @register.inclusion_tag()

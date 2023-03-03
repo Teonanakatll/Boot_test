@@ -150,8 +150,10 @@
                 {{ a.title }}
               </button>
             </h2>
+            {% autoescape off %}
             <div id="flush-collapse{{ a.id }}" class="accordion-collapse collapse" aria-labelledby="heading{{ a.id }}" data-bs-parent="#accordion{{ i.pk }}">
               <div class="accordion-body">{{ a.text }}</div>
+            {% endautoescape %}
             </div>
           </div>
           {% endfor %}
@@ -160,9 +162,27 @@
       </div>
       {% endfor %}
     </div>
-
   </div>
 </section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <h2 class="text-center text-uppercase color1 mb-3">FAQ</h2>
+        {% faq as faq %}
+        {% for fa in faq %}
+        <h5 class="color1">{{ fa.title }}</h5>
+        {% autoescape off %}
+        <p>{{ fa.text }}</p>
+        {% endautoescape %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
 </div>
 
 <footer id="footer">
