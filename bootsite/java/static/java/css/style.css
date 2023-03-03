@@ -11,7 +11,7 @@ header {
 .author, .forwhom, .faq {
     background-color: #000;
 }
-.about, .program {
+.about, .program, .buy {
     background-color: #111;
 }
 header, footer {
