@@ -214,7 +214,24 @@
 </div>
 
 <footer id="footer">
-33
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-6">
+        <img src="{% static 'java/img/logo.png' %}" alt="логотип ITDoctor" class="img-fluid">
+        <p>ⓒ ITDoctor, 2021</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="text-md-end">
+          {% for icon in foot %}
+          <a target="_blank" href="#"><i class="{{ icon }}"></i></a>
+          {% endfor %}
+          <a class="mail_link" target="_blank" href="mailto:ismail_2016@mail.ru?subject-Вопрос по курсу 'Cупер
+              JavaScript'&body-здравствуйте, уважаемый ITDoctor,">ismail_2016@mail.ru</a>
+          <p>По всем вопросам в любое время</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <!-- Cкрипты -->
