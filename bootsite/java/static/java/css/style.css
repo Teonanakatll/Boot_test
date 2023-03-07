@@ -37,7 +37,8 @@ h1, h3, h5, h4, p, ul, li {
     padding-bottom: 0;
 }
 .itd-img {
-    max-width: 360px;
+    height: 700px;
+    width: 600px;
 }
 /* О курсе*/
 .itd-circle {
