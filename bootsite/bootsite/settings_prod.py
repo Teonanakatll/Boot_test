@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv, find_dotenv
 
-load_dotenv(find_dotenv)
+load_dotenv(find_dotenv())
 
 ALLOWED_HOSTS = [os.getenv('ALL_HOST1'), os.getenv('ALL_HOST2')]
 INTERNAL_IPS = None
