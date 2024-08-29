@@ -1,0 +1,6 @@
+asgiref==3.5.2
+Pillow==9.4.0
+python-dotenv==1.0.1
+pywin32==304
+sqlparse==0.4.2
+tzdata==2022.2
